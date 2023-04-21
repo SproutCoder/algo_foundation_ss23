@@ -55,7 +55,7 @@ while centroids_changed:
         centroids = new_centroids
 
     #save results in kmeans_results.txt
-    with open("kmeans_results.txt", "a", encoding="utf-8") as f:
+    with open("kmeans_results.txt", "w", encoding="utf-8") as f:
         f.write(f"{counter}. Cluster assignments (intermediate): {cluster_assignments}\n")
         f.write(f"Centroids (intermediate): {centroids}\n\n")
 
