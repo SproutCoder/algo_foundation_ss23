@@ -26,8 +26,8 @@ k = 3
 # our data set S
 S = np.array([[2, 12], [3, 11], [3, 8], [5, 4], [7, 5], [7, 3], [10, 8], [13, 8]])
 
-# Set the initial centroids to A, B, and C
-centroids = np.array([S[0], S[1], S[2]])
+# Set the initial centroids to B,F and H #(or F,G,H #A, B, and C)
+centroids = np.array([S[1], S[5], S[7]])
 
 # Initialize an array to store the cluster assignments for each data point
 cluster_assignments = np.zeros(S.shape[0])
@@ -55,7 +55,7 @@ while centroids_changed:
         centroids = new_centroids
 
     #save results in kmeans_results.txt
-    with open("kmeans_results.txt", "w", encoding="utf-8") as f:
+    with open("kmeans_results_bfh.txt", "w", encoding="utf-8") as f:
         f.write(f"{counter}. Cluster assignments (intermediate): {cluster_assignments}\n")
         f.write(f"Centroids (intermediate): {centroids}\n\n")
 
@@ -76,9 +76,9 @@ plt.ylabel('y')
 plt.title('k-means clustering')
 
 # Saving the plot
-FILENAME = 'kmeans_plot.png' # Set the filename to save the plot
+FILENAME = 'kmeans_plot_bfh.png' # Set the filename to save the plot
 plt.savefig(FILENAME) # Save the plot to the specified filename
-print("plot saved to 'kmeans_plot.png'")
+print("plot saved to 'kmeans_plot_bfh.png'")
 print('all done (showing plot)')
 
 # Show the plot

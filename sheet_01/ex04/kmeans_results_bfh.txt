@@ -1,0 +1,5 @@
+2. Cluster assignments (intermediate): [0. 0. 0. 1. 1. 1. 2. 2.]
+Centroids (intermediate): [[ 2.66666667 10.33333333]
+ [ 6.33333333  4.        ]
+ [11.5         8.        ]]
+
